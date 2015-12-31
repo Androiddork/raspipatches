@@ -1,0 +1,10 @@
+--- frameworks/base/core/java/android/os/StrictMode.java        2015-12-31 14:17:22.308089599 +0000
++++ frameworks/base/core/java/android/os/StrictMode.java2       2015-12-31 17:01:58.592363961 +0000
+@@ -1066,7 +1066,6 @@
+         // overrides this, so we force the behavior only after the short-circuit
+         // check above.
+         if (IS_ENG_BUILD) {
+-            doFlashes = true;
+         }
+ 
+         // Thread policy controls BlockGuard.

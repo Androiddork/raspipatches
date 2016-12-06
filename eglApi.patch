@@ -1,0 +1,12 @@
+opengl/libs/EGL/eglApi.cpp
+@@ line 478 @@ EGLSurface eglCreateWindowSurface(  EGLDisplay dpy, EGLConfig config,
+             // alpha-channel requested, there's really only one suitable format
+-            format = HAL_PIXEL_FORMAT_RGBA_8888;
++            format = HAL_PIXEL_FORMAT_BGRA_8888;
+         } else {
+@@ line 1843 @@ EGLClientBuffer eglCreateNativeClientBufferANDROID(const EGLint *attrib_list)
+         if (alpha_size == 8) {
+-            format = HAL_PIXEL_FORMAT_RGBA_8888;
++            format = HAL_PIXEL_FORMAT_BGRA_8888;
+         } else {
+

@@ -1,9 +1,12 @@
-media/libstagefright/colorconversion/SoftwareRenderer.cpp
-@@ line 113 @@ void SoftwareRenderer::resetFormatIfChanged(const sp<AMessage> &format) {
-     case OMX_TI_COLOR_FormatYUV420PackedSemiPlanar:
-     {
--            halFormat = HAL_PIXEL_FORMAT_YV12;
--            bufWidth = (mCropWidth + 1) & ~1;
--            bufHeight = (mCropHeight + 1) & ~1;
-         break;
-     }
+--- ./frameworks/av/media/libstagefright/colorconversion/SoftwareRenderer.cpp	2016-12-08 15:07:38.001260344 +0000
++++ ./frameworks/av/media/libstagefright/colorconversion/SoftwareRenderer.cpp2	2016-12-09 14:13:50.753662334 +0000
+@@ -112,9 +112,6 @@
+             case OMX_COLOR_FormatYUV420SemiPlanar:
+             case OMX_TI_COLOR_FormatYUV420PackedSemiPlanar:
+             {
+-                halFormat = HAL_PIXEL_FORMAT_YV12;
+-                bufWidth = (mCropWidth + 1) & ~1;
+-                bufHeight = (mCropHeight + 1) & ~1;
+                 break;
+             }
+             case OMX_COLOR_Format24bitRGB888:

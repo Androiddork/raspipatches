@@ -1,6 +1,11 @@
-opengl/java/android/opengl/GLSurfaceView.java
-@@ line 976 @@ public class GLSurfaceView extends SurfaceView implements SurfaceHolder.Callback
+--- frameworks/base/opengl/java/android/opengl/GLSurfaceView.java	2016-12-08 15:08:22.957260562 +0000
++++ frameworks/base/opengl/java/android/opengl/GLSurfaceView.java2	2016-12-09 14:12:13.057661862 +0000
+@@ -992,7 +992,7 @@
+      */
+     private class SimpleEGLConfigChooser extends ComponentSizeChooser {
          public SimpleEGLConfigChooser(boolean withDepthBuffer) {
 -            super(8, 8, 8, 0, withDepthBuffer ? 16 : 0, 0);
-+            super(8, 8, 8, 8, withDepthBuffer ? 24 : 0, 0);
++            super(8, 8, 8, 0, withDepthBuffer ? 24 : 0, 0);
          }
+     }
+ 

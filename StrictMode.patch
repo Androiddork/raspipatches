@@ -1,5 +1,11 @@
-core/java/android/os/StrictMode.java
-@@ line 1068 @@ public final class StrictMode {
-     if (IS_ENG_BUILD) {
+--- frameworks/base/core/java/android/os/StrictMode.java        2016-12-08 15:07:53.149260418 +0000
++++ frameworks/base/core/java/android/os/StrictMode.java2       2016-12-09 13:52:41.589656200 +0000
+@@ -1077,7 +1077,6 @@
+         // overrides this, so we force the behavior only after the short-circuit
+         // check above.
+         if (IS_ENG_BUILD) {
 -            doFlashes = true;
-     }
+         }
+ 
+         // Thread policy controls BlockGuard.
+
